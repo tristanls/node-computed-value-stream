@@ -7,18 +7,18 @@
 
 var ComputedValueStream = require('../index.js');
 
-var cps = new ComputedValueStream();
+var cvs = new ComputedValueStream();
 
-console.log(cps.value);
+console.log(cvs.value);
 // -> undefined
 
-cps.write({my: 'object'});
-console.log(cps.value);
+cvs.write({my: 'object'});
+console.log(cvs.value);
 // -> { my: 'object' }
 
-cps.on('update', function(updatedValue) {
+cvs.on('update', function(updatedValue) {
   console.log('update:', updatedValue);
 });
 
-cps.write({another: 'thing'});
+cvs.write({another: 'thing'});
 // -> update: { another : 'thing' }
