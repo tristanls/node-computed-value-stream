@@ -1,0 +1,21 @@
+{
+  "name": "computed-value-stream",
+  "version": "0.1.0",
+  "description": "Writeable stream that emits an update event instead of writing",
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.9.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tristanls/node-computed-value-stream.git"
+  },
+  "keywords": [
+    "computed",
+    "property",
+    "value",
+    "stream"
+  ],
+  "author": "Tristan Slominski <tristan.slominski@gmail.com>",
+  "license": "MIT"
+}
